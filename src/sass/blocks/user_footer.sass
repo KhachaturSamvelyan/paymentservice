@@ -1,0 +1,61 @@
+footer
+    background: #1F252D
+    .footer_blok
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 16px
+        padding-bottom: 16px
+        .copyright
+            p
+                font-family: Inter
+                font-style: normal
+                font-weight: 500
+                font-size: 12px
+                line-height: 16px
+                color: #9DA1A6
+        ul
+            display: flex
+            li
+                a
+                    font-family: Inter
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 12px
+                    line-height: 16px
+                    color: #9DA1A6
+                    transition: 0.3s
+                    &:hover
+                        color: #1E66D2
+                &:not(:last-child)
+                    margin-right: 30px
+
+
+
+
+@media (max-width: 767px)
+    footer
+        .footer_blok
+            flex-wrap: wrap
+            justify-content: center
+            flex-direction: column-reverse
+            .copyright
+                margin-top: 8px
+
+
+@media (max-width: 575px)
+    footer
+        .footer_blok
+            flex-wrap: wrap
+            justify-content: center
+            flex-direction: column-reverse
+            .copyright
+                margin-top: 8px
+            ul
+                flex-direction: column
+                align-items: center
+                li 
+                    margin-bottom: 16px
+                    &:not(:last-child)
+                        margin-right: 0px
+                    

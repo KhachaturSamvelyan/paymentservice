@@ -1,0 +1,146 @@
+@import "../base/base"
+@import "../base/fonts"
+@import "../blocks/header"
+@import "../home/footer_home.sass"
+@import "../blocks/footer"
+
+
+
+.help
+    max-width: 960px
+    margin: 100px auto 120px
+    h1
+        font-family: "GilroyExtraBold"
+        font-size: 56px
+        line-height: 115%
+        color: #182049
+        margin-bottom: 20px
+    p
+        font-family: Inter
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 155%
+        color: #1F252D
+        margin-bottom: 40px
+    .help_item
+        position: relative
+        margin-bottom: 16px
+        padding: 20px
+        border: 1px solid #DFE0E1
+        border-radius: 8px
+        .question
+            h2
+                font-family: Inter
+                font-style: normal
+                font-weight: 600
+                font-size: 19px
+                line-height: 130%
+                color: #1F252D
+                cursor: pointer
+            
+        .plus
+            position: absolute
+            right: 20px
+            transition: 0.3s ease
+
+        .answers
+            transition: 0.3s
+            display: none
+            margin-top: 25px
+            p
+                margin-bottom: 24px
+            h3
+                font-family: Inter
+                font-style: normal
+                font-weight: 500
+                font-size: 16px
+                line-height: 20px
+                color: #1F252D
+                margin-bottom: 8px
+
+        .questions
+            display: none
+            &:checked 
+                ~ 
+                    .answers
+                        display: block
+                    .plus
+                        transform: rotate(180deg)
+
+
+
+
+                    
+
+@media (max-width: 1160px)
+    .help
+        max-width: 944px
+        margin: 80px auto 100px
+        h1
+            font-size: 53px
+            line-height: 115%
+            margin-bottom: 23px
+        .help_item
+            .question
+                font-size: 19px
+                line-height: 130%
+                
+
+
+@media (max-width: 991px)
+    .help
+        max-width: 716px
+        margin: 80px auto 80px
+        h1
+            font-size: 49px
+            line-height: 115%
+            margin-bottom: 20px
+        .help_item
+            .question
+                font-size: 19px
+                line-height: 130%
+                
+
+
+@media (max-width: 767px)
+    .help
+        max-width: 536px
+        margin: 60px auto 60px
+        h1
+            font-size: 46px
+            line-height: 115%
+            margin-bottom: 20px
+        .help_item
+            .question
+                font-size: 19px
+                line-height: 130%
+                
+
+@media (max-width: 575px)
+    .help
+        max-width: 320px
+        margin: 40px auto 40px
+        h1
+            font-size: 42px
+            line-height: 115%
+            margin-bottom: 20px
+        .help_item
+            .question
+                font-size: 19px
+                line-height: 130%
+                
+
+@media (max-width: 330px)
+    .help
+        max-width: 300px
+        margin: 40px auto 40px
+        h1
+            font-size: 42px
+            line-height: 115%
+            margin-bottom: 20px
+        .help_item
+            .question
+                font-size: 19px
+                line-height: 130%
+                

@@ -1,0 +1,283 @@
+@import "../base/base"
+@import "../base/fonts"
+@import "../blocks/header"
+@import "../home/footer_home.sass"
+@import "../blocks/footer"
+
+
+
+.dropdown
+    ul
+        display: none
+        width: inherit
+        position: absolute
+        li
+            width: 100%
+    .holder
+        display: block
+    .active
+        display: block
+        li
+            height: 100%
+            transition: 0.3s
+
+
+
+.contact
+    margin: 100px auto 120px
+    max-width: 960px
+    &_blok
+        display: flex
+        justify-content: space-between
+        &_left
+            max-width: 460px
+            h1
+                font-family: "GilroyExtraBold"
+                font-size: 56px
+                line-height: 115%
+                color: #182049
+                margin-bottom: 20px
+                margin-top: 0
+            p
+                font-family: Inter
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 155%
+                color: #1F252D
+            form
+                margin-top: 40px
+                h2
+                    font-family: Inter
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 18px
+                    color: #1F252D
+                    margin-bottom: 10px
+                .group
+                    margin-bottom: 20px
+                    input
+                        background: #EFF4FB
+                        border-radius: 8px
+                        padding: 14px 16px
+                        font-family: Inter
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 20px
+                        color: black
+                        border: none
+                        width: 100%
+                        &::placeholder
+                            color: #888C91
+                    textarea
+                        background: #EFF4FB
+                        border-radius: 8px
+                        padding: 14px 16px
+                        font-family: Inter
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 20px
+                        color: black
+                        border: none
+                        width: 100%
+                        resize: vertical
+                        min-height: 90px
+                button
+                    font-family: Inter
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 20px
+                    color: #FFFFFF
+                    background: #1E66D2
+                    border-radius: 8px
+                    padding: 12px 40px
+                    border: none
+                    cursor: pointer
+                    transition: 0.3s
+                    display: block
+                    margin-left: auto
+                    &:hover
+                        background: #1A57B3
+
+
+                .wrap-drop
+                    margin-bottom: 20px
+                    .dropdown
+                        background: #EFF4FB
+                        border-radius: 8px
+                        padding: 14px 0px
+                        position: relative
+                        cursor: pointer
+                        img
+                            position: absolute
+                            right: 20px
+                            top: 50%
+                            transform: translateY(-50%)
+                        .holder
+                            font-family: Inter
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 14px
+                            line-height: 20px
+                            color: #1F252D
+                            padding-left: 16px
+                        ul
+                            width: 100%
+                            background: white
+                            margin-top: 25px
+                            li
+                                font-family: Inter
+                                font-style: normal
+                                font-weight: normal
+                                font-size: 14px
+                                line-height: 20px
+                                background: #EFF4FB
+                                border-radius: 8px
+                                padding: 14px 16px
+                                width: 100%
+                                margin-bottom: 10px
+
+
+
+        &_right 
+            max-width: 360px
+            padding: 50px 60px 20px
+            background: #EFF4FB
+            align-self: flex-end
+            border-radius: 30px
+            span
+                font-family: Inter
+                font-style: normal
+                font-weight: 500
+                display: block
+                font-size: 14px
+                line-height: 18px
+                color: #6E7278
+                margin-bottom: 6px
+            p
+                font-family: Inter
+                font-style: normal
+                font-weight: normal
+                font-size: 19px
+                line-height: 155%
+                color: #182049
+                margin-bottom: 30px
+                
+
+
+@media (max-width: 1160px)
+    .contact
+        margin: 60px auto 100px
+        max-width: 944px
+        &_blok
+            &_left
+                max-width: 452px
+                h1
+                    font-size: 53px
+            &_right
+                max-width: 370px
+
+
+
+@media (min-width: 992px)
+    .contact_mobile
+        display: none
+
+
+@media (max-width: 991px)
+    .contact
+        margin: 80px auto 80px
+        max-width: 464px
+        h1
+            font-family: "GilroyExtraBold"
+            font-size: 49px
+            line-height: 115%
+            color: #182049
+            margin-bottom: 24px
+        &_blok
+            flex-direction: column-reverse
+            &_left
+                max-width: 464px
+                h1
+                    font-size: 53px
+                    display: none
+            &_right
+                max-width: 464px
+                margin-bottom: 40px
+
+
+@media (max-width: 767px)
+    .contact
+        margin: 60px auto 60px
+        max-width: 440px
+        h1
+            font-family: "GilroyExtraBold"
+            font-size: 46px
+            line-height: 115%
+            color: #182049
+            margin-bottom: 20px
+        &_blok
+            flex-direction: column-reverse
+            &_left
+                max-width: 440px
+                h1
+                    font-size: 53px
+                    display: none
+            &_right
+                max-width: 440px
+                margin-bottom: 40px
+
+
+
+
+@media (max-width: 575px)
+    .contact
+        margin: 40px auto 40px
+        max-width: 320px
+        h1
+            font-family: "GilroyExtraBold"
+            font-size: 42px
+            line-height: 115%
+            color: #182049
+            margin-bottom: 20px
+        &_blok
+            flex-direction: column-reverse
+            &_left
+                max-width: 320px
+                h1
+                    font-size: 53px
+                    display: none
+            &_right
+                max-width: 320px
+                margin-bottom: 40px
+                padding: 24px
+
+
+
+
+
+@media (max-width: 575px)
+    .contact
+        margin: 40px auto 40px
+        max-width: 300px
+        h1
+            font-family: "GilroyExtraBold"
+            font-size: 42px
+            line-height: 115%
+            color: #182049
+            margin-bottom: 20px
+        &_blok
+            flex-direction: column-reverse
+            &_left
+                max-width: 300px
+                h1
+                    font-size: 53px
+                    display: none
+            &_right
+                max-width: 300px
+                margin-bottom: 40px
+                padding: 24px

@@ -1,0 +1,156 @@
+@import "../base/base"
+@import "../base/fonts"
+@import "../blocks/header"
+@import "../home/footer_home.sass"
+@import "../blocks/footer"
+
+
+
+
+.main_sign_up
+    max-width: 360px
+    margin: 100px auto 236px
+    form
+        h1
+            font-family: "GilroyExtraBold"
+            font-size: 32px
+            line-height: 125%
+            color: #182049
+            margin-bottom: 16px
+        
+
+        p
+            font-family: Inter
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 25px
+            color: #6E7278
+            margin:  16px 0px 24px
+        button
+            font-family: Inter
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 20px
+            color: #FFFFFF
+            border: none
+            background: #1E66D2
+            border-radius: 8px
+            text-align: center
+            padding: 18px 0px
+            width: 100%
+            margin-bottom: 24px
+            cursor: pointer
+            transition: 0.3s
+            &:hover
+                background: #1A57B3
+       
+
+        .group
+            position: relative
+            margin-bottom: 12px
+            input
+                display: block
+                width: 100%
+                background: #EFF4FB
+                border-radius: 8px
+                border: none
+                font-family: Inter
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 0px
+                color: #1F252D
+                padding: 0px 16px
+                min-height: 60px
+                max-height: 60px
+                &:focus
+                    border: 2px solid #1E66D2
+                    padding: 25px 16px 10px 16px
+                    ~
+                        label
+                            font-weight: 500
+                            font-size: 13px
+                            line-height: 16px
+                            top: 20px
+                    &:invalid
+                        border: 2px solid #EB2518
+                
+                &:valid
+                    border: 2px solid #1E66D2
+                    padding: 25px 16px 10px 16px
+                    ~
+                        label
+                            font-weight: 500
+                            font-size: 13px
+                            line-height: 16px
+                            top: 20px
+
+            label
+                position: absolute
+                pointer-events: none
+                left: 0
+                padding-left: 18px
+                top: 50%
+                transform: translateY(-50%)
+                transition: 0.2s ease all
+                font-family: Inter
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 24px
+                color: #888C91
+
+
+
+
+@media (max-width: 992px)
+    .main_sign_up
+        max-width: 452px
+        margin: 80px auto 452px
+        form
+            h1
+                font-size: 31px
+                line-height: 125%
+            p
+                max-width: 452px
+         
+
+@media (max-width: 768px)
+    .main_sign_up
+        max-width: 464px
+        margin: 60px auto 452px
+        form
+            h1
+                font-size: 30px
+                line-height: 125%
+            p
+                max-width: 464px
+
+
+@media (max-width: 576px)
+    .main_sign_up
+        max-width: 464px
+        margin: 40px auto 40px
+        form
+            h1
+                font-size: 29px
+                line-height: 125%
+            p
+                max-width: 440px
+
+
+@media (max-width: 464px)
+    .main_sign_up
+        max-width: 320px
+        margin: 40px auto 40px
+        form
+            h1
+                font-size: 28px
+                line-height: 125%
+            p
+                max-width: 320px
+@media (max-width: 325px)
+    .main_sign_up
+        max-width: 300px

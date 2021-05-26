@@ -1,0 +1,29 @@
+extends ../layout/layout.pug
+
+block variables
+    - var title = 'PayUp - Pay safely, quickly and everywhere';
+
+block links
+    - var link = 'Thanks.css';
+
+block scripts
+    - var js = 'index.js';
+
+block header
+    include ../blocks/header.pug
+
+
+
+
+block content
+      section.thx_blok
+        img(src="img/thx.svg", alt="")
+        h1 Email confirmed
+        p Thank you! You confirmed email.
+        a(href="") Go to dashboard
+
+
+
+
+block footer
+    include ../blocks/footer.pug

@@ -1,0 +1,23 @@
+extends ../layout/layout.pug
+
+block variables
+    - var title = 'PayUp - Pay safely, quickly and everywhere';
+
+block links
+    - var link = 'check.css';
+
+block scripts
+    - var js = 'index.js';
+
+block header
+    include ../blocks/header.pug
+
+block content
+    section.confirm_blok
+        img(src="img/load.svg", alt="")
+        p Checking data...
+
+
+
+block footer
+    include ../blocks/footer.pug

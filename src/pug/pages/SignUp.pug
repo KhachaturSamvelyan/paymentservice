@@ -1,0 +1,54 @@
+extends ../layout/layout.pug
+
+block variables
+    - var title = 'PayUp - Pay safely, quickly and everywhere';
+
+block links
+    - var link = 'SignUp.css';
+
+block scripts
+    - var js = 'index.js';
+
+
+            
+
+block header
+    include ../blocks/header.pug
+
+block content
+
+    section.main_sign_up
+        form
+            h1 Sign Up
+            span Have an account? 
+            a(href="Login.html").login_a Log In
+            a(href="").google Continue with Google
+            p Or Sign Up with email
+            .group
+                input(type="text" required )
+                label First name
+            .group
+                input(type="text" required )
+                label Last name
+            .group
+                input(type="text" required )
+                label Email
+            .group
+                input(type="text" required )
+                label Password
+            .group
+                input(type="text" required )
+                label Confirm password
+            button Create account
+            .policy
+                |By signing up, I agree to the 
+                a(href="") Privacy Policy 
+                |and 
+                a(href="") Terms and Conditions
+
+
+
+	
+
+block footer
+    include ../blocks/footer.pug

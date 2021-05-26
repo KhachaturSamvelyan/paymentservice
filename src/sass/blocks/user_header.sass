@@ -1,0 +1,307 @@
+header
+    background: white
+    .logo 
+        display: flex
+    .header_blok
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 20px
+        padding-bottom: 20px
+        .tabs-nav
+            li
+                font-family: Inter
+                font-style: normal
+                font-weight: 500
+                font-size: 14px
+                line-height: 18px
+                color: #888C91
+                display: flex
+                align-items: center
+                a
+                    transition: 0.3s
+                &:not(:last-child)
+                    margin-right: 50px
+                svg
+                    margin-right: 15px
+                    transition: 0.3s
+        .dekstop
+            display: flex
+        .user_info
+            display: flex
+            align-items: center
+            .circle
+                margin-right: 30px
+                display: flex
+                cursor: pointer
+                position: relative
+                .notification
+                    position: absolute
+                    background: #FFFFFF
+                    border: 1px solid #DFE0E1
+                    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1)
+                    border-radius: 8px
+                    min-width: 360px
+                    right: 0
+                    top: 32px
+                    padding-top: 16px
+                    padding-bottom: 16px
+                    display: none
+                    .title
+                        display: flex
+                        justify-content: space-between
+                        padding: 15px 16px
+                        border-bottom: 1px solid #DFE0E1
+                        padding-top: 0
+                        p
+                            font-family: Inter
+                            font-style: normal
+                            font-weight: 500
+                            font-size: 12px
+                            line-height: 16px
+                            text-transform: uppercase
+                            color: #182049
+                           
+                        span
+                            font-family: Inter
+                            font-style: normal
+                            font-weight: 500
+                            font-size: 12px
+                            line-height: 16px
+                            color: #1E66D2
+                    ul
+                        li
+                            position: relative
+                            padding-left: 16px
+                            padding-right: 16px
+                            padding-top: 16px
+                            &:not(:last-child)
+                                padding: 12px 16px
+                                border-bottom: 1px solid #DFE0E1
+                                
+                            svg
+                                position: absolute
+                                right: 16px
+                                top: 50%
+                                transform: translateY(-50%)
+                            .date
+                                font-family: Inter
+                                font-style: normal
+                                font-weight: 500
+                                font-size: 12px
+                                line-height: 16px
+                                color: #888C91
+                                display: block
+                            p
+                                font-family: Inter
+                                font-style: normal
+                                font-weight: 500
+                                font-size: 13px
+                                line-height: 18px
+                                color: black
+                                margin-bottom: 4px
+                                transition: 0.3s
+                                &:hover
+                                    color: #1E66D2
+                                span 
+                                    color: #393E44
+            &_blok
+                display: flex
+                align-items: center
+                cursor: pointer
+                position: relative
+                .settings
+                    position: absolute
+
+                img
+                    margin-right: 8px
+                h2
+                    font-family: Inter
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 18px
+                    color: #182049
+                    position: relative
+                    &:after
+                        content: url("../../img/Icon_arr.svg")
+                        margin-left: 8px
+                        position: relative
+                        top: -2px
+
+                .settings
+                    padding: 22px
+                    background: #FFFFFF
+                    border: 1px solid #DFE0E1
+                    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1)
+                    border-radius: 8px
+                    min-width: 140px
+                    top: 36px
+                    right: 0
+                    display: none
+                    a
+                        font-family: Inter
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 20px
+                        color: #393E44
+                        transition: 0.3s
+                        display: flex
+                        &:hover
+                            color: #1E66D2
+                            &:before
+                               filter: invert(23%) sepia(67%) saturate(1767%) hue-rotate(195deg) brightness(70%) contrast(98%)
+                        &:not(:last-child)
+                            margin-bottom: 22px
+                    .set
+                        &:before
+                            content: url("../../img/set.svg")
+                            margin-right: 10px
+                            position: relative
+                            top: 1px
+                    .out
+                        &:before
+                            content: url("../../img/set2.svg")
+                            margin-right: 10px
+                            position: relative
+                            top: 2px
+
+
+
+.tab-active
+    svg
+        path
+            fill: #1E66D2
+    a
+        color: #182049
+        position: relative
+        &:after
+            content: ""
+            position: absolute
+            width: 134px
+            height: 2px
+            background: #1e66d2
+            bottom: -28px
+            left: -46px
+    a#tab_a
+        &:after
+            content: ""
+            position: absolute
+            width: 174px
+            height: 2px
+            background: #1e66d2
+            bottom: -28px
+            left: -58px
+
+@media (min-width: 575px)
+    .burger
+        display: none
+
+    header 
+
+        .mobile
+            display: none
+
+
+
+@media (max-width: 574px)
+    header 
+        .header_blok
+            ul.dekstop
+                display: none
+        .burger
+            position: relative
+            z-index: 9
+            margin-right: 40px
+        .mobile
+            position: absolute
+            width: 50%
+            background: white
+            height: 100vh
+            display: flex
+            flex-direction: column
+            z-index: 99999999
+            left: 0
+            top: 0
+            align-items: flex-start
+            padding: 70px 20px
+            ul
+                flex-direction: column
+                align-items: flex-start
+                li
+                    margin-right: 0
+                    margin-bottom: 20px
+                    a
+                        font-size: 20px
+                        white-space: nowrap
+
+
+
+
+@media (max-width: 640px)
+    header
+        .header_blok
+            padding-top: 14px
+            padding-bottom: 14px
+            .tabs-nav
+                li
+                    &:not(:last-child)
+                        margin-right: 24px
+                    svg
+                        margin-right: 12px
+
+
+    .tab-active
+        a
+            &:after
+                width: 134px
+                bottom: -22px
+                left: -46px
+        a#tab_a
+            &:after
+                width: 134px
+                bottom: -22px
+                left: -38px
+
+
+@media (min-width: 576px)
+    .mob_arr
+        display: none
+
+@media (max-width: 575px)
+    header
+        .header_blok
+            .header_blok_content
+                display: flex
+                img
+                    margin-right: 20px
+
+            .user_info
+                .circle
+                    margin-right: 24px
+                .user_info_blok
+                    h2
+                        display: none
+        .tab-active
+            a
+                &:after
+                    content: none
+            a#tab_a
+                &:after
+                    content: none
+
+
+
+
+@media (max-width: 515px)
+    header
+        .header_blok
+            .user_info 
+                .circle
+                    .notification
+                        min-width: 254px
+                        left: -173px
+
+
+

@@ -1,0 +1,158 @@
+.how_it_works
+    background: #EFF4FB
+    &_content
+        padding-top: 187px
+        padding-bottom: 120px
+        h2
+            font-family: "GilroyExtraBold"
+            font-size: 45px
+            line-height: 120%
+            text-align: center
+            color: #182049
+            margin-bottom: 20px
+        .line
+            width: 30px
+            height: 2px
+            background: #30C3D9
+            margin: 0 auto
+            margin-bottom: 61px
+        &_blok
+            display: flex
+            justify-content: space-between
+            .dots
+                position: relative
+                &:before
+                    content: url("../../img/dots.svg")
+                    position: absolute
+                    top: 10px
+                    left: -192px
+                &:after
+                    content: url("../../img/dots.svg")
+                    position: absolute
+                    top: 10px
+                    left: 247px
+
+            &_item
+                text-align: center
+                img
+                    margin-bottom: 31px
+                
+
+                h3
+                    font-family: Inter
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 22px
+                    line-height: 130%
+                    text-align: center
+                    color: #182049
+                    margin-bottom: 16px
+                p
+                    font-family: Inter
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 155%
+                    text-align: center
+                    color: #1F252D
+                    max-width: 300px
+
+
+@media (max-width: 1160px)
+    .how_it_works
+        &_content
+            padding-top: 146px
+            padding-bottom: 100px
+            h2
+                font-size: 43px
+                line-height: 120%
+                margin-bottom: 20px
+            .line
+                margin-bottom: 50px
+            &_blok
+                .dots
+                    &:before
+                        content: none
+                    &:after
+                        content: none
+                &_item
+                    img
+                        margin-bottom: 25px
+                    h3
+                        font-size: 22px
+                        line-height: 130%
+                        margin-bottom: 16px
+                    p
+                        max-width: 268px
+                        font-size: 16px
+                        line-height: 155%
+
+
+
+@media (max-width: 869px)
+    .how_it_works
+        &_content
+            padding-top: 80px
+            padding-bottom: 82px
+            h2
+                font-size: 43px
+                line-height: 120%
+                margin-bottom: 20px
+            .line
+                margin-bottom: 50px
+            &_blok
+                flex-direction: column
+                align-items: center
+                .dots
+                    &:before
+                        content: none
+                    &:after
+                        content: none
+                &_item
+                    &:not(:last-child)
+                        margin-bottom: 70px
+                    img
+                        margin-bottom: 20px
+                    h3
+                        font-size: 22px
+                        line-height: 130%
+                        margin-bottom: 16px
+                    p
+                        max-width: 444px
+                        font-size: 16px
+                        line-height: 155%
+
+
+@media (max-width: 575px)
+    .how_it_works
+        &_content
+            padding-top: 60px
+            padding-bottom: 40px
+            h2
+                font-size: 34px
+                line-height: 120%
+                margin-bottom: 16px
+            .line
+                margin-bottom: 32px
+            &_blok
+                flex-direction: column
+                align-items: center
+                .dots
+                    &:before
+                        content: none
+                    &:after
+                        content: none
+                &_item
+                    &:not(:last-child)
+                        margin-bottom: 56px
+                    img
+                        margin-bottom: 16px
+                    h3
+                        font-size: 22px
+                        line-height: 130%
+                        margin-bottom: 16px
+                    p
+                        max-width: 320px
+                        font-size: 16px
+                        line-height: 155%
+

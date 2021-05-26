@@ -1,0 +1,26 @@
+extends ../layout/layout.pug
+
+block variables
+    - var title = 'PayUp - Pay safely, quickly and everywhere';
+
+block links
+    - var link = 'Confirm.css';
+
+block scripts
+    - var js = 'index.js';
+
+block header
+    include ../blocks/header.pug
+
+block content
+    section.confirm_blok
+        img(src="img/mail.svg", alt="")
+        h1 Confirm your email
+        p Thank you for registering. We sent an email with a link to confirm the registration to your email address. Please confirm your account using this link.
+        span You didn't receive the email? 
+        a(href="") Send it again
+
+
+
+block footer
+    include ../blocks/footer.pug

@@ -1,0 +1,513 @@
+extends ../layout/layout.pug
+
+block variables
+    - var title = 'PayUp - Pay safely, quickly and everywhere';
+
+block links
+    - var link = 'dashboard.css';
+
+block scripts
+    - var js = 'index.js';
+
+block header
+    include ../blocks/user_header.pug
+
+    
+block content
+    .tabs-stage
+        section#tab-1.first.container
+            .payment
+                h2 You have 6 payment requests
+                  
+                .slider
+                    .pay.owl-carousel
+                        .pay_content
+                            h3 345.20 USD
+                            p Due date: 
+                                span 14 May 2020
+                            p Project: 
+                                span Design and developme...
+                            a(href="#modal_pay") Details
+                        .pay_content
+                            h3 345.20 USD
+                            p Due date: 
+                                span 14 May 2020
+                            p Project: 
+                                span Design and developme...
+                            a(href="#modal_pay") Details
+                        .pay_content
+                            h3 345.20 USD
+                            p Due date: 
+                                span 14 May 2020
+                            p Project: 
+                                span Design and developme...
+                            a(href="#modal_pay") Details
+                        .pay_content
+                            h3 345.20 USD
+                            p Due date: 
+                                span 14 May 2020
+                            p Project: 
+                                span Design and developme...
+                            a(href="#modal_pay") Details
+                        .pay_content
+                            h3 345.20 USD
+                            p Due date: 
+                                span 14 May 2020
+                            p Project: 
+                                span Design and developme...
+                            a(href="#modal_pay") Details
+                        .pay_content
+                            h3 345.20 USD
+                            p Due date: 
+                                span 14 May 2020
+                            p Project: 
+                                span Design and developme...
+                            a(href="#modal_pay") Details
+                .all_view
+                    h2  Recent transactions 
+                    a(href="") View all
+                .pay_table
+                    table.mobile_table
+                        tr
+                            th Date
+                            th Project
+                            th Status
+                            th Amount
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        
+                    table.dekstop_table
+                        tr
+                            th Date
+                            th Project
+                            th Status
+                            th Amount
+                        tr
+                            td 9 May 2020
+                            td Design and development site on Wordpress
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 2 May 2020
+                            td Redesign our website to new/modern looking
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -35.44 USD
+                        tr
+                            td 9 May 2020
+                            td UI/UX for a simple game
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td Landing page design SEO friendly, High conversion rates
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td User interface of movile app
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td Product Designer (UI/UX)
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td Web designer for e-commerce shop
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td UI/UX for a simple game
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td Landing page design SEO friendly, High conversion rates
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td Redesign our website to new/modern looking
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        
+        section#tab-2.second.container
+            .payment
+                .pay_settings
+                    h2 Transactions
+                    .setting_content
+                        .filter
+                            p Projects:
+                                span  All
+                            .filter_blok
+                                ul
+                                    li
+                                        .form-group
+                                            input(type="checkbox"  )#inp1
+                                            label(for="inp1") Design and development site on Wordp...
+                                    li
+                                        .form-group
+                                            input(type="checkbox" checked )#inp2
+                                            label(for="inp2") Redesign our website to new/modern l...
+                                    li
+                                        .form-group
+                                            input(type="checkbox" checked )#inp3
+                                            label(for="inp3") UI/UX for a simple game
+                                    li
+                                        .form-group
+                                            input(type="checkbox" )#inp4
+                                            label(for="inp4") Landing page design SEO friendly, High...
+                                    li
+                                        .form-group
+                                            input(type="checkbox"  )#inp5
+                                            label(for="inp5") User interface of movile app
+                                    li
+                                        .form-group
+                                            input(type="checkbox" checked  )#inp6
+                                            label(for="inp6") Web designer for e-commerce shop
+                                    li
+                                        .form-group
+                                            input(type="checkbox"  )#inp7
+                                            label(for="inp7") UX Designer (Wireframing / Prototyping)
+                                    li
+                                        .form-group
+                                            input(type="checkbox" )#inp8
+                                            label(for="inp8") Website wireframe - clickable
+                                .buttons
+                                    button.reset Reset
+                                    button.apply Apply
+
+                        .calendar
+                            img(src="img/cal.svg", alt="")
+                            input(placeholder="Date range:").selector
+                                
+
+                .pay_table
+                    table.mobile_table
+                        tr
+                            th Date
+                            th Project
+                            th Status
+                            th Amount
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 
+                                span 9 May 2020
+                                p Design and development site on Wordpress
+                            td 
+                                span Completed
+                                a(href="#modal_pay1") -1,057.19 USD
+                    table.dekstop_table
+                        tr
+                            th Date
+                            th Project
+                            th Status
+                            th Amount
+                        tr
+                            td 9 May 2020
+                            td Design and development site on Wordpress
+                            td.orange Pending
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td Redesign our website to new/modern looking
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td UI/UX for a simple game
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td Landing page design SEO friendly, High conversion rates
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td User interface of movile app
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td.gray_td 9 May 2020
+                            td.gray_td Product Designer (UI/UX)
+                            td.gray_td Canceled
+                            td.gray_td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td Web designer for e-commerce shop
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td UX Designer (Wireframing / Prototyping)
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td Website wireframe - clickable
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD            
+                        tr
+                            td 9 May 2020
+                            td Web designer (Photoshop required) for long-term regular work
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD   
+                        tr
+                            td 9 May 2020
+                            td Design and development site on Wordpress
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td Redesign our website to new/modern looking
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td UI/UX for a simple game
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td Landing page design SEO friendly, High conversion rates
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td User interface of movile app
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td Product Designer (UI/UX)
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td Web designer for e-commerce shop
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td UX Designer (Wireframing / Prototyping)
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD
+                        tr
+                            td 9 May 2020
+                            td Website wireframe - clickable
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD            
+                        tr
+                            td 9 May 2020
+                            td Web designer (Photoshop required) for long-term regular work
+                            td Completed
+                            td
+                                a(href="#modal_pay1") -1,057.19 USD   
+
+                    button Load more
+
+
+
+
+
+    #modal_pay(style="z-index:999999999;")
+        .payment_details
+            img.payment_close(src="img/close_modal.svg", alt="")
+            
+            h1 Payment request details
+            .request_blok
+                ul
+                    li
+                        p Request ID:
+                        span 2146008
+                    li
+                        p Due date:
+                        span 19 May 2020
+                    li
+                        p Project:
+                        span Design and development site on Wordpress
+                    li
+                        p Description:
+                        span Mon, 4 May 2020 - Sun, 10 May 2020
+                    li
+                        p Amount:
+                        span 345.20 USD
+                button Pay now
+    #modal_pay1(style="z-index:999999999;")
+        .payment_details
+            img.payment_close(src="img/close_modal.svg", alt="")
+            
+            h1 Payment request details
+            .request_blok
+                ul
+                    li
+                        p Request ID:
+                        span 2146008
+                    li
+                        p Due date:
+                        span 19 May 2020
+                    li
+                        p Project:
+                        span Design and development site on Wordpress
+                    li
+                        p Description:
+                        span Mon, 4 May 2020 - Sun, 10 May 2020
+                    li
+                        p Amount:
+                        span 345.20 USD
+                    li
+                        p Status:
+                        span.green Completed
+                
+
+
+block footer
+    include ../blocks/user_footer.pug

@@ -1,0 +1,36 @@
+extends ../layout/layout.pug
+
+block variables
+    - var title = 'PayUp - Pay safely, quickly and everywhere';
+
+block links
+    - var link = 'Reset.css';
+
+block scripts
+    - var js = 'index.js';
+
+block header
+    include ../blocks/header.pug
+
+block content
+
+    section.main_sign_up
+        form
+            h1 Reset password
+            p Please enter a new password to be able to log in to your account. If you have remembered your password, you can cancel the password reset, just close this page and log in to your account with your password. 
+            .group
+                input(type="text" required )
+                label New password
+            .group
+                input(type="text" required )
+                label Confirm password
+            
+            
+            button Save new password
+
+
+
+	
+
+block footer
+    include ../blocks/footer.pug

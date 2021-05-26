@@ -1,0 +1,44 @@
+extends ../layout/layout.pug
+
+block variables
+    - var title = 'PayUp - Pay safely, quickly and everywhere';
+
+block links
+    - var link = 'about.css';
+
+block scripts
+    - var js = 'index.js';
+
+block header
+    include ../blocks/header.pug
+
+block content
+    section.about
+        .about_text
+            h1 About Us
+            p PayUp built to simplify payment between client and freelancer. Pay for freelancer services in just a few clicks and don't worry about data protection.
+    section.about_blok
+        .about_blok_text
+            p Quis bibendum egestas egestas enim, eu elementum. Orci sed mauris urna lorem ipsum. Mauris mauris sapien facilisis urna fames cursus in tortor quam. Sed eleifend ornare elementum malesuada pellentesque netus. Nisi, at purus velit vitae dignissim duis leo enim lacus.
+            ul
+                li 
+                    img(src="img/work_icon1.svg", alt="")
+                    h2 Multiple payment methods
+                li 
+                    img(src="img/why_icon2.svg", alt="")
+                    h2 Simple and Secure
+                li 
+                    img(src="img/why_icon3.svg", alt="")
+                    h2 Convenient use
+        .about_blok_img
+            img.head_img(src="img/about_man.png", alt="")
+            .about_blok_img_item
+                img(src="img/about_man2.png", alt="")
+                img.head_img_mobile(src="img/about_man.png", alt="")
+                img(src="img/about_man3.png", alt="")
+
+    p.about_p Mi mi vivamus viverra imperdiet. Magna non ut sed tortor amet ornare at suspendisse a. Donec tortor, amet luctus ligula in montes, eu sit pretium. Est accumsan nunc risus fusce urna tristique etiam. Vitae, aliquet vel congue cras enim venenatis. Vitae, mauris malesuada volutpat dui diam hac et enim at. Odio commodo ut suscipit sit.
+
+
+block footer
+    include ../blocks/footer_home.pug

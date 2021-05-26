@@ -1,0 +1,33 @@
+extends ../layout/layout.pug
+
+block variables
+    - var title = 'PayUp - Pay safely, quickly and everywhere';
+
+block links
+    - var link = 'Forgot.css';
+
+block scripts
+    - var js = 'index.js';
+
+block header
+    include ../blocks/header.pug
+
+block content
+
+    section.main_sign_up
+        form
+            h1 Forgot password?
+            p Please enter your email address and we’ll send you a link to reset your password. 
+            .group
+                input(type="text" required )
+                label Email
+            
+            
+            button Reset password
+
+
+
+	
+
+block footer
+    include ../blocks/footer.pug

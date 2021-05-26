@@ -1,0 +1,29 @@
+extends ../layout/layout.pug
+
+block variables
+    - var title = 'PayUp - Pay safely, quickly and everywhere';
+
+block links
+    - var link = 'error.css';
+
+block scripts
+    - var js = 'index.js';
+
+block header
+    include ../blocks/header.pug
+
+
+
+
+block content
+      section.thx_blok
+        img(src="img/error.svg", alt="")
+        h1 We're sorry, but there's been an error
+        p We couldn't confirm your e-mail because it was already confirmed
+        a(href="") Action button
+
+
+
+
+block footer
+    include ../blocks/footer.pug

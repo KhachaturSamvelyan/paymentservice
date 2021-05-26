@@ -1,0 +1,54 @@
+extends ../layout/layout.pug
+
+block variables
+    - var title = 'PayUp - Pay safely, quickly and everywhere';
+
+block links
+    - var link = 'contact.css';
+
+block scripts
+    - var js = 'index.js';
+
+block header
+    include ../blocks/header.pug
+
+
+block content
+    section.contact
+        h1.contact_mobile Contact
+        .contact_blok
+            .contact_blok_left
+                h1.contact Contact
+                p Do you have any questions, do you want to share your impressions of the use or propose an idea? Leave us a message and we will certainly read it.
+                form
+                    .group
+                        h2 Email
+                        input(type="text" placeholder="Email" required )
+                    .wrap-drop
+                        h2 Subject
+                        div(tabindex="1" class="wrapper-dropdown-3 dropdown" id="dd")
+                            img(src="img/drop.svg", alt="")
+                            span.holder Feedback on using the service
+                            ul
+                                li Feedback on using the service
+                                li Feedback on using the service 2
+                                li Feedback on using the service 3
+                    .group
+                        h2 Message
+                        textarea(name="" placeholder="Type message")
+                    button Send
+            .contact_blok_right
+                span Our office
+                p 7952 Dogwood Ave undefined Farmers Branch, Arkansas 78482 United States
+                span For general inquiries
+                p support@payup.com
+                span For press and media inquiries
+                p press@payup.com
+                span For ideas and suggestions
+                p hello@payup.com
+
+
+
+
+block footer
+    include ../blocks/footer.pug

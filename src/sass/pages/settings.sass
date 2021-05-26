@@ -1,0 +1,599 @@
+@import "../base/base"
+@import "../base/fonts"
+@import "../blocks/user_header"
+@import "../blocks/user_footer"
+
+
+.tabs-nav
+    li
+        transition: 0.3s
+        &:hover
+            a
+                color: #1E66D2
+            
+            svg
+                path
+                    fill: #1E66D2
+
+
+
+.tab-active
+    svg
+        path
+            fill: #B2B6BB
+    a
+        color: #888c9e
+        &:after
+            content: none
+            
+    a#tab_a
+        &:after
+            content: none
+           
+
+
+body
+    background: #F5F5F5
+
+
+
+.tab-active_2
+    a
+        color: #182049!important
+
+
+.settings_content
+    margin: 40px auto 40px
+    max-width: 956px
+    h1
+        font-family: Inter
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 36px
+        color: #182049
+        margin-bottom: 24px
+    .settings_blok
+        border: 1px solid #DFE0E1
+        border-radius: 8px
+        background: white
+        display: flex
+        .tabs-nav_2
+            padding: 40px
+            border-right: 1px solid #DFE0E1
+            min-width: 200px
+            li
+                margin-bottom: 16px
+                a
+                    font-family: Inter
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 18px
+                    color: #888C91
+        #user1
+            padding: 60px 168px
+            form
+                min-width: 420px
+                .form_img
+                    display: flex
+                    align-items: center
+                    margin-bottom: 24px
+                    input
+                        display: none
+                    img
+                        margin-right: 24px
+                    label
+                        font-family: Inter
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 20px
+                        color: #1E66D2
+                        background: #FFFFFF
+                        border: 1px solid #D5D6D8
+                        box-sizing: border-box
+                        border-radius: 8px
+                        padding: 8px 16px
+                        cursor: pointer
+                        transition: 0.3s
+                        margin-right: 8px
+                        &:hover
+                            color:  #1A57B3
+                    .delete
+                        border: none
+                        cursor: pointer
+                        font-family: Inter
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 20px
+                        color: #6E7278
+                        background: white
+                        
+                .people_info
+                    .group
+                        h2
+                            font-family: Inter
+                            font-style: normal
+                            font-weight: 500
+                            font-size: 14px
+                            line-height: 18px
+                            color: #1F252D
+                            margin-bottom: 10px
+                        input
+                            background: #EFF4FB
+                            border-radius: 8px
+                            font-family: Inter
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 14px
+                            line-height: 20px
+                            color: #1F252D
+                            padding: 14px 16px
+                            width: 100%
+                            margin-bottom: 24px
+                            border: none
+                    .form-group
+                        display: block
+                        input
+                            display: none
+                            &:checked 
+                                ~
+                                    label
+                                        &:before
+                                            background: #1E66D2
+                                            border: 1px solid transparent
+                                        &:after
+                                            content: url("../../img/chek.svg")
+                                            display: block
+                                            position: absolute
+                                            top: 0px
+                                            left: 5px
+                        label
+                            position: relative
+                            cursor: pointer
+                            font-family: Inter
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 14px
+                            line-height: 20px
+                            color: #1F252D
+                            display: flex
+                            align-items: center
+                            margin-bottom: 40px
+                            &:before
+                                content: ''
+                                -webkit-appearance: none
+                                display: inline-block
+                                position: relative
+                                cursor: pointer
+                                border: 1px solid #222222
+                                border-radius: 2px
+                                border: 1px solid #D5D6D8
+                                border-radius: 4px
+                                width: 20px
+                                height: 20px
+                                margin-right: 8px
+
+
+                    button
+                        border: none
+                        cursor: pointer
+                        transition: 0.3s
+                        font-family: Inter
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 16px
+                        line-height: 20px
+                        color: #FFFFFF
+                        padding: 12px 24px
+                        background: #1E66D2
+                        border-radius: 8px
+                        &:hover
+                            background: #1A57B3      
+
+
+
+
+        #user2
+            padding: 60px 168px
+            form
+                min-width: 420px
+                .group
+                    h2
+                        font-family: Inter
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 18px
+                        color: #1F252D
+                        margin-bottom: 10px
+                    input
+                        background: #EFF4FB
+                        border-radius: 8px
+                        font-family: Inter
+                        font-style: normal
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 20px
+                        color: #1F252D
+                        padding: 14px 16px
+                        width: 100%
+                        margin-bottom: 24px
+                        border: none
+
+                button
+                    border: none
+                    cursor: pointer
+                    transition: 0.3s
+                    font-family: Inter
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 20px
+                    color: #FFFFFF
+                    padding: 12px 24px
+                    background: #1E66D2
+                    border-radius: 8px
+                    &:hover
+                        background: #1A57B3
+
+
+
+        #user3
+            padding: 60px
+            .add_method
+                min-width: 636px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin-bottom: 32px
+                h2
+                    font-family: Inter
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 20px
+                    line-height: 28px
+                    color: #182049
+                a
+                    font-family: Inter
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 20px
+                    color: #1E66D2
+                    position: relative
+                    &:before
+                        content: url("../../img/add.svg")
+                        position: absolute
+                        left: -20px
+                        top: 2px
+
+            .add_method_blok
+                .card_item
+                    &:first-child
+                        margin-bottom: 24px
+                    h3
+                        font-family: Inter
+                        font-style: normal
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 18px
+                        color: #1F252D
+                        margin-bottom: 12px
+                    .items
+                        padding: 24px
+                        background: #F5F5F5
+                        border-radius: 8px
+                        display: flex
+                        align-items: center
+                        margin-bottom: 12px
+                        position: relative
+                        svg
+                            position: absolute
+                            right: 24px
+                            cursor: pointer
+                            &:hover
+                                path 
+                                    fill: #1F252D
+                        .card      
+                            margin: 0px 16px 0px 24px
+                        span, p
+                            font-family: Inter
+                            font-style: normal
+                            font-weight: normal
+                            font-size: 18px
+                            line-height: 24px
+                            color: #393E44
+                        p
+                            margin-left: 28px
+
+
+
+.tab-active_3
+    border-bottom: 2px solid #1E66D2!important
+    svg
+        path
+            fill: #1E66D2!important
+    a
+        color: #1E66D2!important
+
+
+
+
+#modal_new
+    background-color: #1f252d66
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    display: none
+    .new_card
+        position: relative
+        background: #FFFFFF
+        box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1)
+        border-radius: 8px
+        max-width: 320px
+        margin: 0 auto
+        padding: 30px
+        img
+            position: absolute
+            top: 21px
+            right: 21px
+            cursor: pointer
+        h2
+            font-family: Inter
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 28px
+            color: #182049
+            margin-bottom: 20px
+        ul
+            display: flex
+            align-items: center
+            margin-bottom: 24px
+            li
+                display: flex
+                align-items: center
+                padding-bottom: 16px
+                border-bottom: 2px solid transparent
+                &:not(:last-child)
+                    margin-right: 36px
+                svg
+                    margin-right: 14px
+                a
+                    font-family: Inter
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 20px
+                    color: #888C91
+
+        #credit, #paypal
+            h3
+                font-family: Inter
+                font-style: normal
+                font-weight: 500
+                font-size: 14px
+                line-height: 18px
+                color: #1F252D
+                margin-bottom: 10px
+            input
+                font-family: Inter
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 20px
+                color: #1F252D
+                width: 100%
+                padding: 14px 16px
+                background: #EFF4FB
+                border-radius: 8px
+                margin-bottom: 16px
+                border: none
+                border: 2px solid transparent
+                &:focus
+                    border: 2px solid #1E66D2
+            button
+                background: #1E66D2
+                border-radius: 8px
+                transition: 0.3s
+                border: none
+                cursor: pointer
+                padding: 12px 111px
+                font-family: Inter
+                font-style: normal
+                font-weight: 500
+                font-size: 16px
+                line-height: 20px
+                color: #FFFFFF
+                margin-top: 8px
+                &:hover
+                    background: #1A57B3
+
+    .credit_item
+        display: flex
+        input
+            max-width: 70px
+        &_blok
+            &:first-child
+                input
+                    &:not(:last-child)
+                        margin-right: 8px
+            &:not(:last-child)
+                margin-right: 42px
+                
+
+
+@media (max-width: 1159px)
+
+    .settings_content
+        margin: 32px auto 40px
+        max-width: 936px
+        .container
+            padding: 20px
+        h1
+            margin-bottom: 20px
+            font-size: 24px
+            line-height: 36px
+        .settings_blok
+            .tabs-nav_2
+               padding: 30px
+            #user1
+                padding: 50px 168px
+                form
+                    min-width: 420px
+            #user2
+                padding: 40px
+            #user3
+                padding: 40px
+            
+
+
+@media (max-width: 991px)
+    .settings_content
+        margin: 32px auto 228px
+        h1
+            margin-bottom: 20px
+            font-size: 24px
+            line-height: 36px
+        .settings_blok
+            .tabs-nav_2
+               padding: 30px
+               min-width: 180px
+            #user1
+                padding: 40px 40px
+                form
+                    min-width: 448px
+            #user2
+                padding: 40px
+            #user3
+                padding: 40px
+                .add_method
+                    min-width: 100%
+                    &_blok
+                        min-width: 448px
+               
+
+
+@media (max-width: 767px)
+    .settings_content
+        margin: 24px auto 24px
+        .setings_item
+            min-width: 480px
+        h1
+            margin-bottom: 16px
+            font-size: 20px
+            line-height: 28px
+        .settings_blok
+            display: flex
+            flex-direction: column
+            align-items: center
+            .tabs-nav_2
+                padding: 19px 24px
+                min-width: 100%
+                display: flex
+                justify-content: space-between
+                border-right: none
+                border-bottom: 1px solid #DFE0E1
+                align-items: center
+                li
+                    margin-bottom: 0
+            #user1
+                padding: 24px 24px
+                form
+                    min-width: 100%
+                .people_info
+                    label
+                        margin-bottom: 16px!important
+            #user2
+                padding: 20px
+                form
+                    min-width: 480px
+
+            #user3
+                padding: 20px
+                form
+                    min-width: 448px
+
+
+@media (max-width: 575px)
+    .settings_content
+        margin: 20px auto 20px
+        max-width: 320px
+        .container
+            padding-left: 0
+            padding-right: 0
+        .setings_item
+            min-width: 288px
+            .form_img
+                label
+                    white-space: nowrap
+
+        h1
+            margin-bottom: 12px
+            font-size: 18px
+            line-height: 24px
+        .settings_blok
+            display: flex
+            flex-direction: column
+            align-items: center
+            .tabs-nav_2
+                padding: 15px 16px
+                min-width: 100%
+                display: flex
+                justify-content: space-between
+                border-right: none
+                border-bottom: 1px solid #DFE0E1
+                align-items: center
+                li
+                    margin-bottom: 0
+                    a
+                        font-size: 12px
+            #user1
+                padding: 16px 16px
+                .people_info
+                    label
+                        margin-bottom: 16px!important
+                        font-size: 12px!important
+
+
+
+            #user2
+                padding: 16px
+                form 
+                    min-width: 300px
+
+            #user3
+                padding: 16px
+                .add_method
+                    min-width: 100%
+                    padding: 0px 16px
+                    h2
+                        font-size: 16px
+                        line-height: 24px
+                    &_blok
+                        min-width: 320px
+                        .card_item
+                            max-width: 288px
+                            margin: 0 auto
+                            .items
+                                padding: 16px 12px
+                                .card
+                                    margin: 0 12px 0 18px
+
+                                p
+                                    font-size: 14px
+                                    line-height: 24px
+                                    margin-left: 5px
+                                svg
+                                    right: 10px
+                                &:first-child
+                                    
+                                    img
+                                        width: 24px

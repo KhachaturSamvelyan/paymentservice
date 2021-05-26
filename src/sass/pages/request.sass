@@ -1,0 +1,212 @@
+@import "../base/base"
+@import "../base/fonts"
+@import "../blocks/user_header"
+@import "../blocks/user_footer"
+
+
+
+
+.tabs-nav
+    li
+        transition: 0.3s
+        &:hover
+            a
+                color: #1E66D2
+            
+            svg
+                path
+                    fill: #1E66D2
+
+
+
+.tab-active
+    svg
+        path
+            fill: #B2B6BB
+    a
+        color: #888c9e
+        &:after
+            content: none
+            
+    a#tab_a
+        &:after
+            content: none
+           
+
+
+body
+    background: #F5F5F5
+
+
+.request
+    margin: 40px auto 368px
+    max-width: 760px
+    h1
+        font-family: Inter
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 36px
+        color: #182049
+        margin-bottom: 24px
+    &_blok
+        padding: 40px
+        background: white
+        border: 1px solid #DFE0E1
+        border-radius: 4px
+        ul
+            li
+                margin-bottom: 16px
+                display: flex
+                p
+                    font-family: Inter
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 20px
+                    color: #1F252D
+                    min-width: 80px
+                span
+                    font-family: Inter
+                    font-style: normal
+                    font-size: 14px
+                    line-height: 20px
+                    color: #1F252D
+                    font-weight: 500
+                    margin-left: 86px
+        button
+            border: none
+            transition: 0.3s 
+            cursor: pointer
+            font-family: Inter
+            font-style: normal
+            font-weight: 500
+            font-size: 16px
+            line-height: 20px
+            color: #FFFFFF
+            padding: 12px 47px
+            background: #1E66D2
+            border-radius: 8px
+            display: block
+            margin: 0 auto
+            margin-top: 24px
+            
+            &:hover
+                background: #1A57B3
+
+
+
+
+@media (max-width: 1159px)
+    .request
+        margin: 32px auto 248px
+        max-width: 776px
+
+
+@media (max-width: 991px)
+     .request
+        margin: 32px auto 504px
+        max-width: 776px
+        h1
+            margin-bottom: 20px
+
+@media (max-width: 767px)
+    .request
+        margin: 24px auto 24px
+        max-width: 528px
+        h1
+            margin-bottom: 16px
+            font-size: 20px
+            line-height: 28px
+        &_blok
+            padding: 16px
+            ul
+                li
+                    span
+                        margin-left: 60px
+        
+
+
+@media (max-width: 575px)
+    .request
+        margin: 20px auto 20px
+        max-width: 528px
+        h1
+            margin-bottom: 12px
+            font-size: 18px
+            line-height: 24px
+        &_blok
+            padding: 16px
+            ul
+                li
+                    span
+                        margin-left: 20px
+
+
+
+
+#modal_pay
+    background-color: #1f252d66
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    display: none
+    .pay_content
+        background: #FFFFFF
+        box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1)
+        border-radius: 8px
+        padding: 30px
+        position: relative
+        .payment_close
+            position: absolute
+            top: 16px
+            right: 16px
+            cursor: pointer
+        h2
+            font-family: Inter
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 28px
+            color: #182049
+            margin-bottom: 16px      
+        &_blok
+            display: flex
+            &_item
+                border: 1px solid #DFE0E1
+                box-sizing: border-box
+                border-radius: 8px
+                padding: 21px
+
+                display: flex
+                flex-direction: column
+                img
+                    margin-bottom: 8px
+                a
+                    font-family: Inter
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 20px
+                    color: #1E66D2
+                    position: relative
+                    &:after
+                        content: url("../../img/pay_right.svg")
+                        margin-left: 7px
+                &:not(:last-child)
+                    margin-right: 24px
+
+
+@media (max-width: 430px)
+    #modal_pay 
+        .pay_content_blok
+            flex-direction: column
+            align-items: center
+            &_item
+                &:not(:last-child)
+                    margin-right: 0px
+                    margin-bottom: 20px

@@ -1,0 +1,136 @@
+extends ../layout/layout.pug
+
+block variables
+    - var title = 'PayUp - Pay safely, quickly and everywhere';
+
+block links
+    - var link = 'settings.css';
+
+block scripts
+    - var js = 'index.js';
+
+block header
+    include ../blocks/setting_header.pug
+
+    
+block content
+    .settings_content
+        .container
+            h1 Settings
+            .settings_blok 
+                ul.tabs-nav_2
+                    li 
+                        a(href="#user1") Account details
+                    li 
+                        a(href="#user2") Password
+                    li 
+                        a(href="#user3") Payment method
+                .tabs-stage2
+                    section.setings_item#user1
+                        form
+                            .form_img
+                                img(src="img/people2.svg", alt="")
+                                input(type="file")#people
+                                label(for="people") Upload new
+                                button.delete Delete
+                            .people_info
+                                .group
+                                    h2 First name
+                                    input(type="text"  required value="Judith" contenteditable="true")
+                                .group
+                                    h2 Last name
+                                    input(type="text"  required value="Flores" contenteditable="true")
+                                .group
+                                    h2 Email
+                                    input(type="text"  required   value="alice.mitchell@example.com" contenteditable="true")
+                                .form-group
+                                    input(type="checkbox"  checked)#inp1
+                                    label(for="inp1") Receive notifications when payment is due
+                                button Save
+                    section#user2
+                        form
+                            .group
+                                h2 Current password
+                                input(type="password"  required  value="password")
+                            .group
+                                h2 New password
+                                input(type="text"  required )
+                            .group
+                                h2 Confirm password
+                                input(type="text"  required )
+                            button Save new password
+
+
+                    section#user3
+                        .add_method
+                            h2 Your payment methods
+                            a(href="#modal_new") Add new
+                        .add_method_blok
+                            .card_item
+                                h3 Default payment method
+                                .items
+                                    svg(xmlns="http://www.w3.org/2000/svg" width="4" height="14" viewBox="0 0 4 14" fill="none")
+                                        path(fill-rule="evenodd" clip-rule="evenodd" d="M0.332031 2.00001C0.332031 1.07954 1.07822 0.333344 1.9987 0.333344C2.91917 0.333344 3.66536 1.07954 3.66536 2.00001C3.66536 2.92049 2.91917 3.66668 1.9987 3.66668C1.07822 3.66668 0.332031 2.92049 0.332031 2.00001ZM1.9987 5.33334C1.07822 5.33334 0.332031 6.07954 0.332031 7.00001C0.332031 7.92048 1.07822 8.66668 1.9987 8.66668C2.91917 8.66668 3.66536 7.92048 3.66536 7.00001C3.66536 6.07954 2.91917 5.33334 1.9987 5.33334ZM0.332031 12C0.332031 11.0795 1.07822 10.3333 1.9987 10.3333C2.91917 10.3333 3.66536 11.0795 3.66536 12C3.66536 12.9205 2.91917 13.6667 1.9987 13.6667C1.07822 13.6667 0.332031 12.9205 0.332031 12Z" fill="#9DA1A6")
+                                    img(src="img/visa.svg", alt="")
+                                    img.card(src="img/card_number.svg", alt="")
+                                    span 2455
+                            .card_item
+                                h3 Other payment methods
+                                .items
+                                    svg(xmlns="http://www.w3.org/2000/svg" width="4" height="14" viewBox="0 0 4 14" fill="none")
+                                        path(fill-rule="evenodd" clip-rule="evenodd" d="M0.332031 2.00001C0.332031 1.07954 1.07822 0.333344 1.9987 0.333344C2.91917 0.333344 3.66536 1.07954 3.66536 2.00001C3.66536 2.92049 2.91917 3.66668 1.9987 3.66668C1.07822 3.66668 0.332031 2.92049 0.332031 2.00001ZM1.9987 5.33334C1.07822 5.33334 0.332031 6.07954 0.332031 7.00001C0.332031 7.92048 1.07822 8.66668 1.9987 8.66668C2.91917 8.66668 3.66536 7.92048 3.66536 7.00001C3.66536 6.07954 2.91917 5.33334 1.9987 5.33334ZM0.332031 12C0.332031 11.0795 1.07822 10.3333 1.9987 10.3333C2.91917 10.3333 3.66536 11.0795 3.66536 12C3.66536 12.9205 2.91917 13.6667 1.9987 13.6667C1.07822 13.6667 0.332031 12.9205 0.332031 12Z" fill="#9DA1A6")
+                                    img(src="img/visa.svg", alt="")
+                                    img.card(src="img/card_number.svg", alt="")
+                                    span 2455
+                                .items
+                                    svg(xmlns="http://www.w3.org/2000/svg" width="4" height="14" viewBox="0 0 4 14" fill="none")
+                                        path(fill-rule="evenodd" clip-rule="evenodd" d="M0.332031 2.00001C0.332031 1.07954 1.07822 0.333344 1.9987 0.333344C2.91917 0.333344 3.66536 1.07954 3.66536 2.00001C3.66536 2.92049 2.91917 3.66668 1.9987 3.66668C1.07822 3.66668 0.332031 2.92049 0.332031 2.00001ZM1.9987 5.33334C1.07822 5.33334 0.332031 6.07954 0.332031 7.00001C0.332031 7.92048 1.07822 8.66668 1.9987 8.66668C2.91917 8.66668 3.66536 7.92048 3.66536 7.00001C3.66536 6.07954 2.91917 5.33334 1.9987 5.33334ZM0.332031 12C0.332031 11.0795 1.07822 10.3333 1.9987 10.3333C2.91917 10.3333 3.66536 11.0795 3.66536 12C3.66536 12.9205 2.91917 13.6667 1.9987 13.6667C1.07822 13.6667 0.332031 12.9205 0.332031 12Z" fill="#9DA1A6")
+                                    img(src="img/master.svg", alt="")
+                                    img.card(src="img/card_number.svg", alt="")
+                                    span 2455
+                                .items
+                                    svg(xmlns="http://www.w3.org/2000/svg" width="4" height="14" viewBox="0 0 4 14" fill="none")
+                                        path(fill-rule="evenodd" clip-rule="evenodd" d="M0.332031 2.00001C0.332031 1.07954 1.07822 0.333344 1.9987 0.333344C2.91917 0.333344 3.66536 1.07954 3.66536 2.00001C3.66536 2.92049 2.91917 3.66668 1.9987 3.66668C1.07822 3.66668 0.332031 2.92049 0.332031 2.00001ZM1.9987 5.33334C1.07822 5.33334 0.332031 6.07954 0.332031 7.00001C0.332031 7.92048 1.07822 8.66668 1.9987 8.66668C2.91917 8.66668 3.66536 7.92048 3.66536 7.00001C3.66536 6.07954 2.91917 5.33334 1.9987 5.33334ZM0.332031 12C0.332031 11.0795 1.07822 10.3333 1.9987 10.3333C2.91917 10.3333 3.66536 11.0795 3.66536 12C3.66536 12.9205 2.91917 13.6667 1.9987 13.6667C1.07822 13.6667 0.332031 12.9205 0.332031 12Z" fill="#9DA1A6")
+                                    img(src="img/paypal.svg", alt="")
+                                    p anthony.hoffman@example.com
+        
+
+
+    #modal_new
+        .new_card
+            h2 Add payment method
+            img.payment_close(src="img/close_modal.svg", alt="")
+            ul.tabs-nav_3
+                li
+                    svg(xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none")
+                        path(d="M20 4H4C2.897 4 2 4.897 2 6V18C2 19.103 2.897 20 4 20H20C21.103 20 22 19.103 22 18V6C22 4.897 21.103 4 20 4ZM4 6H20V8H4V6ZM4 18V12H20.001L20.002 18H4Z" fill="#9DA1A6")
+                        path(d="M6 14H12V16H6V14Z" fill="#9DA1A6")
+                    a(href="#credit") Credit Card
+                li
+                    svg(xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none")
+                        path(d="M19.5534 9.488C19.6744 10.051 19.6594 10.734 19.5134 11.539C18.9314 14.517 17.0364 16.005 13.8304 16.005H13.3884C13.225 16.004 13.067 16.0631 12.9444 16.171C12.8173 16.2811 12.7328 16.4321 12.7054 16.598L12.6644 16.787L12.1114 20.266L12.0904 20.417C12.0619 20.584 11.9742 20.7352 11.8434 20.843C11.72 20.9516 11.5608 21.0107 11.3964 21.009H8.87339C8.81024 21.0123 8.74722 21.0004 8.68962 20.9743C8.63202 20.9482 8.58153 20.9087 8.54239 20.859C8.50264 20.8083 8.47407 20.7497 8.45856 20.6871C8.44305 20.6246 8.44095 20.5594 8.45239 20.496C8.51339 20.123 8.60039 19.558 8.71939 18.807C8.83639 18.057 8.92539 17.493 8.98639 17.118C9.04739 16.743 9.13639 16.18 9.25839 15.433C9.37939 14.685 9.47039 14.123 9.52939 13.748C9.56239 13.5 9.70839 13.377 9.96239 13.377H11.2784C12.1714 13.39 12.9604 13.32 13.6534 13.166C14.8254 12.904 15.7874 12.422 16.5394 11.717C17.2244 11.08 17.7424 10.255 18.0994 9.244C18.2614 8.774 18.3764 8.327 18.4514 7.906C18.4574 7.865 18.4654 7.84 18.4764 7.832C18.4844 7.821 18.4984 7.818 18.5114 7.821C18.5331 7.83069 18.5539 7.84241 18.5734 7.856C19.0974 8.254 19.4274 8.797 19.5534 9.488ZM17.8254 6.652C17.8254 7.369 17.6714 8.16 17.3604 9.026C16.8234 10.588 15.8134 11.644 14.3234 12.194C13.5654 12.463 12.7214 12.602 11.7884 12.619C11.7884 12.625 11.4874 12.626 10.8844 12.626L9.98139 12.619C9.30939 12.619 8.91439 12.939 8.79439 13.583C8.78139 13.636 8.49639 15.413 7.93939 18.912C7.93139 18.978 7.89139 19.014 7.81839 19.014H4.85339C4.78352 19.0155 4.71418 19.0014 4.65038 18.9729C4.58658 18.9444 4.52989 18.9021 4.48439 18.849C4.43719 18.7968 4.40234 18.7346 4.38243 18.6671C4.36252 18.5996 4.35807 18.5285 4.36939 18.459L6.70139 3.664C6.73126 3.47467 6.82945 3.30285 6.97739 3.181C7.12164 3.05684 7.30608 2.98932 7.49639 2.991H13.5104C13.7384 2.991 14.0654 3.035 14.4894 3.122C14.9174 3.206 15.2904 3.316 15.6124 3.443C16.3304 3.717 16.8784 4.131 17.2574 4.68C17.6364 5.232 17.8254 5.887 17.8254 6.652Z" fill="#9DA1A6")
+                    a(href="#paypal") PayPal
+            .tabs-stage3
+                section#credit
+                    h3 Card number
+                    input(type="text" placeholder="1244 3075 6942 8201")
+                    .credit_item
+                        .credit_item_blok
+                            h3 Expires date
+                            input(type="text" placeholder="MM")
+                            input(type="text" placeholder="YY")
+                        .credit_item_blok
+                            h3 CVC
+                            input(type="text" )
+                    button Save
+                    
+
+                section#paypal
+                    h3 PayPal email
+                    input(type="text" placeholder="example@example.com")
+                    
+                    button Save
+
+
+block footer
+    include ../blocks/user_footer.pug

@@ -1,0 +1,53 @@
+extends ../layout/layout.pug
+
+block variables
+    - var title = 'PayUp - Pay safely, quickly and everywhere';
+
+block links
+    - var link = 'request.css';
+
+block scripts
+    - var js = 'index.js';
+
+block header
+    include ../blocks/setting_header.pug
+
+    
+block content
+    section.request
+        .container
+            h1 Payment request details
+            .request_blok
+                ul
+                    li
+                        p Request ID:
+                        span 2146008
+                    li
+                        p Due date:
+                        span 19 May 2020
+                    li
+                        p Project:
+                        span Design and development site on Wordpress
+                    li
+                        p Description:
+                        span Mon, 4 May 2020 - Sun, 10 May 2020
+                    li
+                        p Amount:
+                        span 345.20 USD
+                button.pay_now Pay now
+    #modal_pay
+        .pay_content
+            img.payment_close(src="img/close_modal.svg", alt="")
+            h2 Select payment method
+            .pay_content_blok
+                .pay_content_blok_item
+                    img(src="img/paypal2.svg", alt="")
+                    a(href="") Pay with PayPal
+                .pay_content_blok_item
+                    img(src="img/arca.svg", alt="") 
+                    a(href="") Pay with ArcaPay
+
+
+
+block footer
+    include ../blocks/user_footer.pug
